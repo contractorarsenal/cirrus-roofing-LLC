@@ -85,7 +85,8 @@ img{display:block;max-width:100%;height:auto;}
 nav#mainNav{position:sticky;top:0;z-index:200;background:var(--ink);border-bottom:3px solid var(--rust);}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;padding:0 24px;max-width:1200px;margin:0 auto;}
 .nav-brand{display:flex;align-items:center;gap:12px;}
-.nav-logo{width:42px;height:42px;background:var(--rust);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;border-radius:var(--r-sm);}
+.nav-logo{height:46px;width:auto;flex-shrink:0;display:block;}
+.footer-logo{height:72px;width:auto;display:block;margin-bottom:12px;}
 .nav-brand-wrap{display:flex;flex-direction:column;line-height:1.15;}
 .nav-brand-name{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.1em;color:#fff;}
 .nav-brand-sub{font-family:'Manrope',sans-serif;font-size:.44rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);}
@@ -309,9 +310,7 @@ textarea.form-field{resize:vertical;min-height:160px;}
   <div class="nav-inner">
     <a href="index.html">
       <div class="nav-brand">
-        <div class="nav-logo">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
+        <img src="images/logo-nav.png" alt="Cirrus Roofing" class="nav-logo"/>
         <div class="nav-brand-wrap">
           <span class="nav-brand-name">Cirrus Roofing Co.</span>
           <span class="nav-brand-sub">Watsonville, CA — Santa Cruz to Monterey County</span>
@@ -539,6 +538,7 @@ textarea.form-field{resize:vertical;min-height:160px;}
     <div class="container">
       <div class="footer-grid">
         <div>
+          <img src="images/logo-footer.png" alt="Cirrus Roofing" class="footer-logo"/>
           <div class="footer-brand-name">Cirrus Roofing</div>
           <div class="footer-brand-sub">Watsonville, CA — Santa Cruz to Monterey County</div>
           <p class="footer-desc">We don't rush quality, we take our time. Roofing, metal roofing, flat roofing, hot mop, gutters, leak repair and emergency repairs. 20 to 30 years of experience.</p>
