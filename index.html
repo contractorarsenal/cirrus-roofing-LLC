@@ -4,13 +4,12 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Cirrus Roofing | Watsonville CA | Santa Cruz to Monterey County Roofer</title>
-<meta name="description" content="Cirrus Roofing serves Santa Cruz County to Monterey County. We don't rush quality, we take our time. Roofing, metal roofing, flat roofing, hot mop, gutters, leak repair and emergency repairs. 20 to 30 years of experience. Free estimates. Call (408) 670-3199."/>
-<meta name="keywords" content="roofing contractor Watsonville CA, roofer Santa Cruz County, Monterey County roofing, hot mop roofing, metal roofing, flat roofing, composition roofing, tile roofing, gutters Watsonville, leak repair Salinas, emergency roof repair Monterey, CA licensed roofer"/>
+<meta name="description" content="Cirrus Roofing serves Santa Cruz County to Monterey County. We don't rush quality, we take our time. Roofing, metal roofing, flat roofing, hot mop, gutters, leak repair and emergency repairs. Free estimates. Call (408) 670-3199."/>
 <link rel="canonical" href="https://cirrusroofingco.com/index.html"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://cirrusroofingco.com/"/>
 <meta property="og:title" content="Cirrus Roofing | Santa Cruz to Monterey County | We Don't Rush Quality"/>
-<meta property="og:description" content="20 to 30 years of roofing experience. Serving Santa Cruz County to Monterey County. Hot mop, metal, flat, composition, tile, gutters and emergency repairs. Free estimates."/>
+<meta property="og:description" content="Hands-on, careful roofing work. Serving Santa Cruz County to Monterey County. Hot mop, metal, flat, composition, tile, gutters and emergency repairs. Free estimates."/>
 <meta property="og:image" content="https://cirrusroofingco.com/images/og-home.jpg"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Cirrus Roofing Co."/>
@@ -31,7 +30,7 @@
   "alternateName": "Cirrus Roofing Co.",
   "url": "https://cirrusroofingco.com",
   "logo": "https://cirrusroofingco.com/images/logo.png",
-  "description": "We don't rush quality, we take our time. Cirrus Roofing serves Santa Cruz County to Monterey County. Roofing, metal roofing, flat roofing, hot mop, composition, tile, leak repair, emergency repairs, gutters and downspouts. 20 to 30 years of experience.",
+  "description": "We don't rush quality, we take our time. Cirrus Roofing serves Santa Cruz County to Monterey County. Roofing, metal roofing, flat roofing, hot mop, composition, tile, leak repair, emergency repairs, gutters and downspouts.",
   "address": {"@type": "PostalAddress","addressLocality": "Watsonville","addressRegion": "CA","addressCountry": "US"},
   "geo": {"@type": "GeoCoordinates","latitude": 36.9102,"longitude": -121.7569},
   "telephone": "+14086703199",
@@ -81,6 +80,9 @@
 }
 html{scroll-behavior:smooth;}
 body{font-family:'Manrope',sans-serif;background:var(--warm);color:var(--text);overflow-x:hidden;line-height:1.6;}
+.skip-link{position:absolute;top:-48px;left:8px;z-index:999;background:var(--rust);color:#fff;padding:10px 18px;border-radius:0 0 8px 8px;font-family:"Manrope",sans-serif;font-size:.78rem;font-weight:700;transition:top .2s ease;}
+.skip-link:focus{top:0;}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--rust-lt);outline-offset:2px;}
 a{text-decoration:none;color:inherit;}
 img{display:block;max-width:100%;height:auto;}
 .container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
@@ -109,9 +111,9 @@ img{display:block;max-width:100%;height:auto;}
 
 /* NAV */
 nav{position:sticky;top:0;z-index:200;background:var(--ink);border-bottom:3px solid var(--rust);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;padding:0 24px;max-width:1200px;margin:0 auto;}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:90px;padding:0 24px;max-width:1200px;margin:0 auto;}
 .nav-brand{display:flex;align-items:center;gap:12px;}
-.nav-logo{height:58px;width:auto;flex-shrink:0;display:block;}
+.nav-logo{height:78px;width:auto;flex-shrink:0;display:block;}
 .footer-logo{height:72px;width:auto;display:block;margin-bottom:12px;}
 .nav-brand-wrap{display:flex;flex-direction:column;line-height:1.15;}
 .nav-brand-name{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.1em;color:#fff;}
@@ -168,6 +170,7 @@ nav{position:sticky;top:0;z-index:200;background:var(--ink);border-bottom:3px so
 .fg select option{background:#141410;color:#fff;}
 .hqcard-note{text-align:center;margin-top:10px;font-size:.6rem;color:rgba(255,255,255,.16);}
 .success-msg{display:none;margin-top:10px;font-family:'Manrope',sans-serif;font-size:.76rem;font-weight:700;color:#ffb59a;letter-spacing:.04em;text-align:center;}
+.hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
 
 /* MARQUEE */
 .marquee-wrap{background:var(--rust);overflow:hidden;padding:11px 0;}
@@ -457,6 +460,7 @@ footer{background:var(--ink);}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#hero">Skip to main content</a>
 
 <!-- DEMO BADGE -->
 <!-- FLOAT CTA -->
@@ -473,18 +477,21 @@ footer{background:var(--ink);}
 <!-- DRAWER -->
 <div class="drawer" id="drawer">
   <button class="drawer-close" id="drawerClose">&times;</button>
-  <a href="index.html" onclick="closeDrawer()">Home</a>
+  <a href="index.html" onclick="closeDrawer()" style="color:#ffb59a">Home</a>
+  <a href="roof-repair.html" onclick="closeDrawer()">Roof Repair</a>
+  <a href="roof-replacement.html" onclick="closeDrawer()">Roof Replacement</a>
+  <a href="roof-leak-repair.html" onclick="closeDrawer()">Leak Repair</a>
   <a href="about.html" onclick="closeDrawer()">About</a>
-  <a href="contact.html" onclick="closeDrawer()" style="color:#ffb59a">Contact</a>
+  <a href="contact.html" onclick="closeDrawer()">Contact</a>
 </div>
 
 <!-- ANNOUNCE -->
 <div class="announce">
-  <p class="announce-desktop">We Don't Rush Quality, We Take Our Time &nbsp;&#9650;&nbsp; <span>Santa Cruz to Monterey County</span> &nbsp;&#9650;&nbsp; 20 to 30 Years Experience &nbsp;&#9650;&nbsp; (408) 670-3199</p>
+  <p class="announce-desktop">We Don't Rush Quality, We Take Our Time &nbsp;&#9650;&nbsp; <span>Santa Cruz to Monterey County</span>  &nbsp;&#9650;&nbsp; Free Estimates &nbsp;&#9650;&nbsp; (408) 670-3199</p>
   <div class="announce-mobile" id="tickerWrap">
     <span class="tick active">Santa Cruz to Monterey County</span>
     <span class="tick">We Don't Rush Quality</span>
-    <span class="tick">20 to 30 Years Experience</span>
+    <span class="tick">Free Estimates</span>
     <span class="tick">Call (408) 670-3199</span>
   </div>
 </div>
@@ -526,11 +533,11 @@ footer{background:var(--ink);}
   <div class="hero-inner">
     <div class="hero-grid">
       <div>
-        <div class="hero-badge"><span class="hero-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>Yelp Reviewed &nbsp; 20 to 30 Years Experience &nbsp; CA Licensed</span></div>
+        <div class="hero-badge"><span>Yelp Reviewed &nbsp; Owner-Operated &nbsp; Free Estimates</span></div>
         <div class="hero-eyebrow"><div class="hero-line"></div><span>Santa Cruz County to Monterey County</span></div>
         <h1 class="hero-title">Cirrus<br><span class="ar">Roofing</span></h1>
         <p class="hero-loc">We Don't Rush Quality, We Take Our Time</p>
-        <p class="hero-sub">Old-school roofing done right. Cirrus Roofing delivers roofing, gutters and repairs backed by 20 to 30 years of real experience across Santa Cruz County to Monterey County.</p>
+        <p class="hero-sub">Old-school roofing done right. Cirrus Roofing delivers roofing, gutters and repairs backed by hands-on, careful craftsmanship across Santa Cruz County to Monterey County.</p>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-rust btn-lg">Get a Free Estimate</a>
           <a href="#services" class="btn btn-outline-w btn-lg">Our Services</a>
@@ -538,12 +545,12 @@ footer{background:var(--ink);}
         <div class="htbar">
           <div class="htbar-item">
             <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            20 to 30 Years Experience
+            Owner-Operated Crew
           </div>
           <div class="htbar-div"></div>
           <div class="htbar-item">
             <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Emergency Repairs Available
+            Call for Urgent Repair Availability
           </div>
           <div class="htbar-div"></div>
           <div class="htbar-item">
@@ -565,12 +572,16 @@ footer{background:var(--ink);}
           <p>Roofing, gutters, leak repair and emergency repairs</p>
         </div>
         <div class="hqcard-body">
-          <form onsubmit="handleForm(event,this,'hs1')">
-            <div class="fg"><label>Your Name</label><input type="text" placeholder="Jane Smith" required/></div>
-            <div class="fg"><label>Phone Number</label><input type="tel" placeholder="(408) 000-0000" required/></div>
+          <form id="estimate-form-hero" class="js-estimate-form" data-redirect="thank-you.html" novalidate>
+            <input type="hidden" name="access_key" value="5131bf5e-7754-4830-9add-f6a6aa554211"/>
+            <input type="hidden" name="subject" value="New Roofing Estimate Request — Cirrus Roofing (Hero Form)"/>
+            <input type="text" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off"/>
+            <input type="hidden" name="utm_source"/><input type="hidden" name="utm_medium"/><input type="hidden" name="utm_campaign"/><input type="hidden" name="utm_term"/><input type="hidden" name="utm_content"/><input type="hidden" name="gclid"/><input type="hidden" name="referrer"/><input type="hidden" name="landing_page"/><input type="hidden" name="page_title"/><input type="hidden" name="page_url"/><input type="hidden" name="form_location" value="homepage-hero-form"/>
+            <div class="fg"><label>Your Name</label><input type="text" name="full_name" placeholder="Jane Smith" required/></div>
+            <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="(408) 000-0000" required/></div>
             <div class="fg">
               <label>Service Needed</label>
-              <select required>
+              <select name="service" required>
                 <option value="" disabled selected>Select a service...</option>
                 <option>Roofing</option>
                 <option>Metal Roofing</option>
@@ -584,11 +595,12 @@ footer{background:var(--ink);}
                 <option>Other</option>
               </select>
             </div>
-            <div class="fg"><label>City / Area</label><input type="text" placeholder="Watsonville, CA"/></div>
-            <button type="submit" class="btn btn-rust btn-full">Send My Request &rarr;</button>
-            <div class="success-msg" id="hs1">Thank you. Someone from our team will reach out shortly.</div>
+            <div class="fg"><label>City / Area</label><input type="text" name="city" placeholder="Watsonville, CA"/></div>
+            <button type="submit" class="btn btn-rust btn-full js-submit-btn"><span class="js-btn-text">Send My Request &rarr;</span><svg class="js-btn-spin" style="display:none" width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" opacity=".25"/><path fill="currentColor" opacity=".75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur=".8s" repeatCount="indefinite"/></path></svg></button>
+            <div id="hero-form-error" class="js-form-error" role="alert" style="display:none;margin-top:10px;font-size:.68rem;color:#ffb59a;text-align:center;"></div>
+            <div class="success-msg js-form-success" id="hs1">Thank you. Someone from our team will reach out shortly.</div>
           </form>
-          <p class="hqcard-note">Free estimate. No spam. Fast response guaranteed.</p>
+          <p class="hqcard-note">Free estimate. No spam.</p>
         </div>
       </div>
     </div>
@@ -598,13 +610,13 @@ footer{background:var(--ink);}
 <!-- TRUST STRIP -->
 <div class="trust-strip">
   <div class="container"><div class="trust-inner">
-    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="t-text">20 to 30 Years Experience</span></div>
+    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="t-text">Owner-Operated Crew</span></div>
     <div class="t-div"></div>
     <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><span class="t-text">Multiple Roofing Systems</span></div>
     <div class="t-div"></div>
     <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><span class="t-text">Old-School Craftsmanship</span></div>
     <div class="t-div"></div>
-    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><span class="t-text">Emergency Repairs Available</span></div>
+    <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><span class="t-text">Call for Urgent Repair Availability</span></div>
     <div class="t-div"></div>
     <div class="t-item"><div class="t-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><span class="t-text">Free Estimates</span></div>
   </div></div>
@@ -681,7 +693,7 @@ footer{background:var(--ink);}
           <div class="svc-num">01</div>
           <div class="svc-name">Roofing</div>
           <div class="svc-desc">Complete roofing services built for durability and long-term performance. We don't rush — we take our time to make sure the job is done right.</div>
-          <a href="#contact" class="svc-link">Get a Free Estimate &rarr;</a>
+          <a href="roof-repair.html" class="svc-link">Roof Repair &amp; Replacement &rarr;</a>
         </div>
       </div>
 
@@ -693,7 +705,7 @@ footer{background:var(--ink);}
           <div class="svc-num">02</div>
           <div class="svc-name">Emergency Repairs</div>
           <div class="svc-desc">Roof problems can't wait. Fast response when your roof needs immediate attention. We're here when you need us most.</div>
-          <a href="#contact" class="svc-link">Emergency Response &rarr;</a>
+          <a href="roof-leak-repair.html" class="svc-link">Emergency Leak Repair &rarr;</a>
         </div>
       </div>
 
@@ -771,62 +783,21 @@ footer{background:var(--ink);}
 </section>
 
 <!-- REVIEWS -->
+<!-- TODO(owner): Replace this CTA with real, verified Google/Yelp reviews once available. Do not add fabricated quotes or star counts. -->
 <section id="reviews" class="sec sec-off">
   <div class="container">
     <div class="rating-bar reveal">
-      <div>
-        <div class="rating-big">5★</div>
+      <div class="rat-p">
+        <span class="rat-badge">Yelp Reviewed</span>
+        <span class="rat-badge">Owner-Operated</span>
+        <span class="rat-badge">Santa Cruz to Monterey</span>
       </div>
-      <div>
-        <div class="rating-stars-row">
-          <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
-        </div>
-        <div class="rat-p">
-          <span class="rat-badge">Yelp Reviewed</span>
-          <span class="rat-badge">20 to 30 Yrs Experience</span>
-          <span class="rat-badge">Santa Cruz to Monterey</span>
-        </div>
-      </div>
-      <a href="https://www.yelp.com/biz/cirrus-roofing-watsonville-3" target="_blank" rel="noopener" class="rat-right">See Our Reviews</a>
+      <a href="https://www.yelp.com/biz/cirrus-roofing-watsonville-3" target="_blank" rel="noopener" class="rat-right">See Our Reviews on Yelp</a>
     </div>
     <div class="section-head">
       <span class="lbl">Real Customers</span>
       <h2 class="sec-title">What our <span class="ar">customers</span> say.</h2>
-    </div>
-    <div class="reviews-grid">
-      <div class="review-card reveal">
-        <div class="review-stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
-        <p class="review-text">"Honest, hard working and they took their time to do it right. No cutting corners. My roof looks amazing and I know it was done properly."</p>
-        <div class="review-author">
-          <div class="rav rav-r">MS</div>
-          <div>
-            <div class="review-name">Mark S.</div>
-            <div class="review-meta">Watsonville, Yelp Review</div>
-          </div>
-        </div>
-      </div>
-      <div class="review-card reveal" style="animation-delay:.1s">
-        <div class="review-stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
-        <p class="review-text">"Called them about a leak and they came out fast. Fixed it the right way the first time. These guys actually know what they're doing."</p>
-        <div class="review-author">
-          <div class="rav rav-b">SJ</div>
-          <div>
-            <div class="review-name">Sarah J.</div>
-            <div class="review-meta">Santa Cruz, Yelp Review</div>
-          </div>
-        </div>
-      </div>
-      <div class="review-card reveal" style="animation-delay:.2s">
-        <div class="review-stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
-        <p class="review-text">"I've used other roofers before and there's a clear difference. Cirrus takes their time and it shows. The quality of the work speaks for itself."</p>
-        <div class="review-author">
-          <div class="rav rav-s">DM</div>
-          <div>
-            <div class="review-name">David M.</div>
-            <div class="review-meta">Salinas, Yelp Review</div>
-          </div>
-        </div>
-      </div>
+      <p class="sec-sub">Read verified reviews directly from our Yelp and Google profiles.</p>
     </div>
   </div>
 </section>
@@ -892,14 +863,14 @@ footer{background:var(--ink);}
           />
         </div>
         <div class="about-badge">
-          <span>20+</span>
-          <small>Years Experience</small>
+          <span>Owner</span>
+          <small>Operated</small>
         </div>
       </div>
       <div>
         <span class="lbl">Our Story</span>
         <h2 class="about-title reveal">Built on <span class="ar">experience</span><br>and quality.</h2>
-        <p class="about-body reveal">Cirrus Roofing was built after years of working in the roofing industry. With decades of hands-on experience, the owner understood the trade inside and out. It was his brother who pushed him to take the next step and start his own company. That push turned into a business built on pride, skill and a commitment to doing things the right way.</p>
+        <p class="about-body reveal">Cirrus Roofing was built after years of working in the roofing industry. Through hands-on experience, the owner understood the trade inside and out. It was his brother who pushed him to take the next step and start his own company. That push turned into a business built on pride, skill and a commitment to doing things the right way.</p>
         <p class="about-body reveal">We serve Santa Cruz County to Monterey County and we work across all major roofing systems. We take our time on every job because quality is not something you rush.</p>
         <div class="pills reveal">
           <span class="pill">Watsonville Based</span>
@@ -907,11 +878,11 @@ footer{background:var(--ink);}
           <span class="pill">Old-School Work Ethic</span>
           <span class="pill">No Shortcuts</span>
           <span class="pill">Free Estimates</span>
-          <span class="pill">CA Licensed</span>
+          <span class="pill">Owner-Operated</span>
         </div>
         <div class="stats-row reveal">
-          <div class="stat"><span class="stat-num">20+</span><span class="stat-lbl">Years Experience</span></div>
-          <div class="stat"><span class="stat-num">5★</span><span class="stat-lbl">Yelp Rated</span></div>
+          <div class="stat"><span class="stat-num">Owner</span><span class="stat-lbl">Operated</span></div>
+          <div class="stat"><span class="stat-num">Yelp</span><span class="stat-lbl">Reviewed</span></div>
           <div class="stat"><span class="stat-num">9+</span><span class="stat-lbl">Roofing Systems</span></div>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;" class="reveal">
@@ -946,7 +917,7 @@ footer{background:var(--ink);}
       <div class="value-card reveal" style="animation-delay:.2s">
         <div class="value-card-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <div class="value-card-title">Proven Methods</div>
-        <div class="value-card-body">With 20 to 30 years in roofing we know what works and what doesn't. We use techniques that have been proven over time, not whatever is fastest or cheapest.</div>
+        <div class="value-card-body">Through hands-on experience in roofing, we know what works and what doesn't. We use techniques that have been proven over time, not whatever is fastest or cheapest.</div>
       </div>
       <div class="value-card reveal" style="animation-delay:.3s">
         <div class="value-card-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
@@ -1012,11 +983,11 @@ footer{background:var(--ink);}
       <div>
         <span class="lbl lbl-w">Emergency Services</span>
         <h2 class="sec-title sec-title-w reveal">Roof problems <span class="ar">can't wait.</span></h2>
-        <p class="sec-sub" style="color:rgba(255,255,255,.5);text-align:left;margin:14px 0 24px;" class="reveal">Leaks and damage can quickly turn into bigger issues. Cirrus Roofing offers emergency repair services across Santa Cruz County to Monterey County so you can act fast and protect your home.</p>
+        <p class="sec-sub" style="color:rgba(255,255,255,.5);text-align:left;margin:14px 0 24px;" class="reveal">Leaks and damage can quickly turn into bigger issues. Cirrus Roofing handles roof leak and storm damage repairs across Santa Cruz County to Monterey County. Call to check urgent repair availability depending on schedule and conditions.</p>
         <div class="svc-list-grid" style="max-width:480px;margin-bottom:28px;">
           <div class="svc-list-item reveal">
             <div class="svc-list-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <span class="svc-list-name">Fast Response Time</span>
+            <span class="svc-list-name">Call to Check Availability</span>
           </div>
           <div class="svc-list-item reveal">
             <div class="svc-list-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -1039,7 +1010,7 @@ footer{background:var(--ink);}
           alt="Roof repair work in progress — Cirrus Roofing Co., Santa Cruz County"
           loading="lazy"
         />
-        <div class="storm-badge">24h Emergency</div>
+        <div class="storm-badge">Emergency Response</div>
       </div>
     </div>
   </div>
@@ -1086,7 +1057,7 @@ footer{background:var(--ink);}
           <span class="faq-q-text">Why should I choose Cirrus Roofing?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-a">We don't rush quality, we take our time. With 20 to 30 years of experience in roofing, we know what it takes to do the job right. We use proven methods, we're honest about what the work involves and we take pride in every project we take on.</div>
+        <div class="faq-a">We don't rush quality, we take our time. Through hands-on experience in roofing, we know what it takes to do the job right. We use proven methods, we're honest about what the work involves and we take pride in every project we take on.</div>
       </div>
     </div>
   </div>
@@ -1101,8 +1072,8 @@ footer{background:var(--ink);}
       <p class="sec-sub">Serving Santa Cruz County to Monterey County. If you're not sure if we cover your area, just call us at (408) 670-3199.</p>
     </div>
     <div class="areas-grid">
-      <div class="area-tag">Watsonville</div>
-      <div class="area-tag">Santa Cruz</div>
+      <a class="area-tag" href="watsonville-ca-roofing.html">Watsonville</a>
+      <a class="area-tag" href="santa-cruz-ca-roofing.html">Santa Cruz</a>
       <div class="area-tag">Aptos</div>
       <div class="area-tag">Capitola</div>
       <div class="area-tag">Scotts Valley</div>
@@ -1159,14 +1130,18 @@ footer{background:var(--ink);}
           <p>Roofing, gutters, leak repair and emergency repairs</p>
         </div>
         <div class="cform-body">
-          <form onsubmit="handleForm(event,this,'cs1')">
+          <form id="estimate-form-main" class="js-estimate-form" data-redirect="thank-you.html" novalidate>
+            <input type="hidden" name="access_key" value="5131bf5e-7754-4830-9add-f6a6aa554211"/>
+            <input type="hidden" name="subject" value="New Roofing Estimate Request — Cirrus Roofing (Homepage Form)"/>
+            <input type="text" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off"/>
+            <input type="hidden" name="utm_source"/><input type="hidden" name="utm_medium"/><input type="hidden" name="utm_campaign"/><input type="hidden" name="utm_term"/><input type="hidden" name="utm_content"/><input type="hidden" name="gclid"/><input type="hidden" name="referrer"/><input type="hidden" name="landing_page"/><input type="hidden" name="page_title"/><input type="hidden" name="page_url"/><input type="hidden" name="form_location" value="homepage-main-form"/>
             <div class="row2">
-              <div class="est-fg"><label>First Name</label><input type="text" placeholder="Jane" required/></div>
-              <div class="est-fg"><label>Last Name</label><input type="text" placeholder="Smith" required/></div>
+              <div class="est-fg"><label>First Name</label><input type="text" name="first_name" placeholder="Jane" required/></div>
+              <div class="est-fg"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" required/></div>
             </div>
-            <div class="est-fg"><label>Phone Number</label><input type="tel" placeholder="(408) 000-0000" required/></div>
+            <div class="est-fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="(408) 000-0000" required/></div>
             <div class="est-fg"><label>Service Needed</label>
-              <select required>
+              <select name="service" required>
                 <option value="" disabled selected>Select a service...</option>
                 <option>Roofing</option>
                 <option>Metal Roofing</option>
@@ -1180,10 +1155,11 @@ footer{background:var(--ink);}
                 <option>Other</option>
               </select>
             </div>
-            <div class="est-fg"><label>City / Area</label><input type="text" placeholder="Watsonville, CA"/></div>
-            <div class="est-fg"><label>Tell us about your project (optional)</label><textarea placeholder="Type of roof, current issues, size or anything else that helps..."></textarea></div>
-            <button type="submit" class="btn btn-rust btn-full">Send My Request &rarr;</button>
-            <div class="success-msg" id="cs1">Thank you. Someone from our team will reach out shortly.</div>
+            <div class="est-fg"><label>City / Area</label><input type="text" name="city" placeholder="Watsonville, CA"/></div>
+            <div class="est-fg"><label>Tell us about your project (optional)</label><textarea name="message" placeholder="Type of roof, current issues, size or anything else that helps..."></textarea></div>
+            <button type="submit" class="btn btn-rust btn-full js-submit-btn"><span class="js-btn-text">Send My Request &rarr;</span><svg class="js-btn-spin" style="display:none" width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" opacity=".25"/><path fill="currentColor" opacity=".75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur=".8s" repeatCount="indefinite"/></path></svg></button>
+            <div id="main-form-error" class="js-form-error" role="alert" style="display:none;margin-top:10px;font-size:.72rem;color:#b91c1c;text-align:center;"></div>
+            <div class="success-msg js-form-success" id="cs1">Thank you. Someone from our team will reach out shortly.</div>
           </form>
           <p class="form-note">Free estimate. No spam. No obligation.</p>
         </div>
@@ -1223,30 +1199,32 @@ footer{background:var(--ink);}
         <div>
           <div class="footer-col-title">Services</div>
           <ul class="footer-links">
-            <li><a href="#services">Roofing</a></li>
+            <li><a href="roof-repair.html">Roof Repair</a></li>
+            <li><a href="roof-replacement.html">Roof Replacement</a></li>
+            <li><a href="roof-leak-repair.html">Leak Repair</a></li>
             <li><a href="#services">Metal Roofing</a></li>
-            <li><a href="#services">Flat and Hot Mop</a></li>
-            <li><a href="#services">Leak Repair</a></li>
             <li><a href="#services">Gutters and Downspouts</a></li>
           </ul>
         </div>
         <div>
           <div class="footer-col-title">Service Areas</div>
           <ul class="footer-links">
-            <li><a href="#areas">Watsonville</a></li>
-            <li><a href="#areas">Santa Cruz</a></li>
-            <li><a href="#areas">Salinas</a></li>
-            <li><a href="#areas">Monterey</a></li>
-            <li><a href="#areas">Aptos, Capitola and More</a></li>
+            <li><a href="watsonville-ca-roofing.html">Watsonville</a></li>
+            <li><a href="santa-cruz-ca-roofing.html">Santa Cruz</a></li>
+            <li><a href="salinas-ca-roofing.html">Salinas</a></li>
+            <li><a href="monterey-ca-roofing.html">Monterey</a></li>
+            <li><a href="service-areas.html">Aptos, Capitola and More</a></li>
           </ul>
         </div>
         <div>
           <div class="footer-col-title">Company</div>
           <ul class="footer-links">
             <li><a href="about.html">About Us</a></li>
+            <li><a href="roofing-projects.html">Roofing Projects</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="free-estimate.html">Free Estimate</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://www.yelp.com/biz/cirrus-roofing-watsonville-3" target="_blank" rel="noopener">Yelp Reviews</a></li>
-            <li><a href="tel:+14086703199">(408) 670-3199</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
@@ -1260,74 +1238,8 @@ footer{background:var(--ink);}
   </div>
 </footer>
 
-<script>
-document.body.classList.add('js-loaded');
+<script src="js/business-config.js"></script>
+<script src="js/site.js"></script>
 
-// ANNOUNCE TICKER
-(function(){
-  const ticks = document.querySelectorAll('#tickerWrap .tick');
-  let i = 0;
-  setInterval(() => {
-    ticks[i].classList.remove('active');
-    i = (i + 1) % ticks.length;
-    ticks[i].classList.add('active');
-  }, 2600);
-})();
-
-// HAMBURGER / DRAWER
-const burger = document.getElementById('hamburger');
-const drawer = document.getElementById('drawer');
-const drawerClose = document.getElementById('drawerClose');
-burger.addEventListener('click', () => drawer.classList.add('open'));
-drawerClose.addEventListener('click', () => drawer.classList.remove('open'));
-function closeDrawer(){ drawer.classList.remove('open'); }
-
-// FLOAT CTA
-let floatDismissed = false;
-let floatShown = false;
-const floatCta = document.getElementById('floatCta');
-window.addEventListener('scroll', () => {
-  if (!floatDismissed && !floatShown && window.scrollY > 400) {
-    floatShown = true;
-    floatCta.classList.add('vis');
-  }
-}, {passive: true});
-function dismissFloat(){ floatDismissed = true; floatCta.classList.remove('vis'); }
-
-// FAQ ACCORDION
-function toggleFAQ(el){
-  const item = el.closest('.faq-item');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-
-// FORM HANDLER
-function handleForm(e, form, successId){
-  e.preventDefault();
-  const btn = form.querySelector('button[type=submit]');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  setTimeout(() => {
-    form.reset();
-    btn.textContent = 'Send My Request →';
-    btn.disabled = false;
-    document.getElementById(successId).style.display = 'block';
-    setTimeout(() => { document.getElementById(successId).style.display = 'none'; }, 5000);
-  }, 1200);
-}
-
-// REVEAL ON SCROLL
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }});
-}, { threshold: 0.12 });
-revealEls.forEach(el => observer.observe(el));
-
-// NAV SCROLL SHADOW
-window.addEventListener('scroll', () => {
-  document.getElementById('mainNav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,.3)' : '';
-}, {passive: true});
-</script>
 </body>
 </html>
